@@ -5,9 +5,11 @@ puede funcionar con cualquier tipo de modelo de la marca NeoPixel)
 Tira led:
 para poder hacer uso de este sistema es necesario unas tiras leds RGB del modelo WS2811
 *dejo enlaces de compra del material:
+
 -https://articulo.mercadolibre.com.mx/MLM-1902107207-tira-led-rgb-neopixel-programable-ws2811-300led-12v-5m-negra-_JM?quantity=1
 -https://www.amazon.com.mx/Tira-Flexible-Pixel-Programable-Ws2811/dp/B0CQFB6G7C/ref=sr_1_2_sspa?dib=eyJ2IjoiMSJ9.qmBhYrxWl8yI1UvKOTpr3QslbOorx1s9schic9phK9ffS7B3_u02oU_ELvi6FVi5aZDXZIvvSJwRvhoS8IYDDzeIZ6y4rv-dFglNtyzAzZb3bduq7pS0gkIT-NClDCgCC9gAEUkOcm3lkr479k8DYkHsUUGGRbzcNJA2UpT3coDLsL0uM7xciV_vE6E2svyN_8H3r97jF514J4j3b4LhPeCVB3cSv3pw4fFxrgPtbN_l50-MazJXP0Omz9xYhxbD1rwZYQhaZVsPPtrBDZxLe5PYhjvVCRSVl6rfYv04h9o.6XE8gmFOyuUG5M8GjIlFBIa4Rk9OVsYKpF48U9xiIgc&dib_tag=se&keywords=led+pixel+ws2811&qid=1757104316&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1
 *
+
 Controlador:
 El controlador que se utilizó es de la marca espressif llamado ESP32 con el modelo C3 super mini, un controlador relativamente pequeño, practico y  barato
 *dejo enlaces de compra del material:
