@@ -91,8 +91,8 @@ class FramelessResizableWindow(QWidget):
         btnColor.clicked.connect(lambda: self.Funciones("solido"))
         DivDiseñoLayout.addWidget(btnColor)
 
-        btnArcoiris = QPushButton("Efecto Arcoiris")
-        btnArcoiris.clicked.connect(lambda: self.Funciones("arcoiris"))
+        btnArcoiris = QPushButton("Efecto aleatoriedad")
+        btnArcoiris.clicked.connect(lambda: self.Funciones("aleatoriedad"))
         DivDiseñoLayout.addWidget(btnArcoiris)
 
         btnDesvanecer = QPushButton("Efecto Desvanecer")
@@ -137,10 +137,13 @@ class FramelessResizableWindow(QWidget):
                 if color.isValid():
                     # 🔹 Llamamos al BLE en asyncio sin bloquear Qt
                     asyncio.create_task(self.CambiarColor(color.red(), color.green(),color.blue(), "solido"))
-            case "arcoiris":
-                asyncio.create_task(self.CambiarColor("", "", "", "arcoiris"))
+            case "aleatoriedad":
+                asyncio.create_task(self.CambiarColor("", "", "", "aleatoriedad"))
             case "desvanecer":
-                asyncio.create_task(self.CambiarColor("", "", "", "desvanecer"))
+                color = QColorDialog.getColor(QColor("#ffffff"), self, "Selecciona un color")
+                if color.isValid():
+                    # 🔹 Llamamos al BLE en asyncio sin bloquear Qt
+                    asyncio.create_task(self.CambiarColor(color.red(), color.green(), color.blue(), "desvanecer"))
 
 
     async def CambiarColor(self, R, G, B,funcion):
