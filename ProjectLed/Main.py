@@ -182,15 +182,15 @@ class FramelessResizableWindow(QWidget):
                     case "solido":
                         payload = f"{R},{B},{G},{funcion}".encode()
                         await client.write_gatt_char(CHARACTERISTIC_UUID, payload)
-                        print(f"LEDs cambiados a RGB({R},{G},{B})")
-                    case "arcoiris":
-                        payload = f"{funcion}".encode()
+                        print(f"LEDs cambiados a RGB({R},{G},{B}) {funcion}")
+                    case "aleatoriedad":
+                        payload = f"{R},{B},{G},{funcion}".encode()
                         await client.write_gatt_char(CHARACTERISTIC_UUID, payload)
-                        print(f"LEDs con efecto arcoiris")
+                        print(f"LEDs con efecto aleatorio {funcion}")
                     case "desvanecer":
                         payload = f"{R},{B},{G},{funcion}".encode()
                         await client.write_gatt_char(CHARACTERISTIC_UUID, payload)
-                        print(f"LEDs cambiados a RGB({R},{G},{B})")
+                        print(f"LEDs cambiados a RGB({R},{G},{B}) {funcion}")
 
         except Exception as e:
             print("Error en la conexión BLE:", e)
