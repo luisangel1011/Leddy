@@ -1,6 +1,6 @@
 # Leddy - Controlador de LEDs con ESP32-C3 Super Mini
 
-##Descripción
+Descripción
 **Leddy** es un sistema que se encarga de poder controlar tiras led RGB de la marca NeoPixel modelo Ws2811 (aunque creo que
 puede funcionar con cualquier tipo de modelo de la marca NeoPixel) basado en el microcontrolador **ESP32-C3**
 El sistema es fácil de replicar, económico y totalmente personalizable
