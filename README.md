@@ -21,12 +21,21 @@ enlaces de compra del material:
 **Controlador ESP32 C3:**
 El controlador que se utilizó es de la marca espressif llamado ESP32 con el modelo C3 super mini, un controlador relativamente pequeño, practico y  barato
 
-
-
-enlaces de compra del material:
----
 -https://articulo.mercadolibre.com.mx/MLM-2092820231-esp32-c3-esp32-supermini-wifi-bluetooth-_JM?quantity=2
 
 -https://www.amazon.com.mx/piezas-ESP32-C3-Board-ESP32-Super/dp/B0DR53F2JN/ref=sr_1_7?adgrpid=154919059638&dib=eyJ2IjoiMSJ9.X5AKn8cijh09XisLc_kEGFXNocGosUL4rwjUEvwjzce_ikMH0aBciLIU7c5cEZ5frQlA-b2a2EMfGFgNx4hZwjk7ARR-fZ7IOIvMAI1TPesP7yLjxRi9NzYRZVygEaPvM4gY88-9eMSAF8DJgyCJIlp0Fm5-QnQGd3PnZvJVmywIRaw0-y91u7pN4ksdTHlbMGY1Omd9sNRT5l3H992D3M6X3X1uUC0lgX3ayjbp4XoqSYSAiq1yLGPB80T481-3u3byY-Cx1FbWijN3sI4H1IUxJSP8zTm-cyUyv5Erf7A.JNDFvI6h6P-yigoDoQGM6nXjlkatXSmAA5yXo-28Y_w&dib_tag=se&hvadid=675462263473&hvdev=c&hvlocphy=1010139&hvnetw=g&hvqmt=b&hvrand=9154430883537724482&hvtargid=kwd-984563639425&hydadcr=5620_13208818&keywords=esp+32+mini&mcid=faf97d950d26397d934c9c6e86a41cee&qid=1757104548&sr=8-7&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b
 
+## Instalación
 
+Para poder instalar el necesitaremos una fuente de poder para poder alimentar las tiras leds necesitaremos un voltaje de 12v y 5v para alimentar el esp32 c3 supermini, ambos dispositivos se deben de conectar en la misma tierra (gnd), el conector de datos de la tira led se debe de conectar en el pin de dato 5 (gpio 5) del esp 32 c3 supermini, despues de realizar la soldadura de los cables se debe de cargar el codigo dentro del esp32 c3 supermini y mantenerlo encendido,  despues abrir el programa de python antes de eso instalar las dependencias necesarias
+
+**dependencias de python:**
+
+pip install pillow bleak pyqt5 qasync sympy
+
+
+![image](https://europe1.discourse-cdn.com/arduino/original/4X/b/4/1/b41cb5d47221f72dce90d2227369a7aa359fa2d0.jpeg)
+
+![image](https://www.signliteled.com/wp-content/uploads/2024/09/image.webp)
+
+despues de instalar las dependencias del programa de python ejecutarlo y probarlo
